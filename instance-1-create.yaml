@@ -1,0 +1,13 @@
+heat_template_version: 2016-04-08
+description: Template to create a basic nova volume. 
+
+resources:
+    nova_server:
+        type: OS::Nova::Server
+        properties:
+            image: Ubuntu-16.04-Xenial-x64-2017-03
+            flavor: p1-0.75gb
+            key_name: default_key_pair
+            networks:
+                - network: c3tp-collab_network
+

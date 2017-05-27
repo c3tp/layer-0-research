@@ -1,0 +1,30 @@
+heat_template_version: 2016-04-08
+description: Updated template 3 with key change. Should replace. 
+
+resources:
+    new_floating_ip:
+        type: OS::Neutron::FloatingIP
+        properties:
+            floating_network: net04_ext
+    bootable_volume:
+        type: OS::Cinder::Volume
+        properties:
+            size: 10
+            image: Ubuntu-16.04-Xenial-x64-2017-03
+    nova_server:
+        type: OS::Nova::Server
+        properties:
+            flavor: p4-3gb
+            key_name: kubernetes_keypair
+            networks:
+                - network: c3tp-collab_network
+            block_device_mapping:
+                - device_name: vda
+                  volume_id: {get_resource: bootable_volume}
+                  delete_on_termination: false
+    ip_association:
+        type: OS::Nova::FloatingIPAssociation
+        properties:
+            floating_ip: { get_resource: new_floating_ip}
+            server_id: {get_resource: nova_server}
+
