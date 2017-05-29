@@ -8,7 +8,8 @@
 - worked when I turned off the VM that it was running off of.
 - (instance-4-create.yaml vs instance-5-create.yaml) 
 3. Attempt to remove a boot volume. 
-
+- This worked surprisingly. 
+- (instance-4-create.yaml vs instance-9-create.yaml) 
 4. Attempt to modify an attached volume down in size.
 - NotSupported: resources.attached_volume: Shrinking volume is not supported.                                         
 - (instance-8-create.yaml vs instance-7-create.yaml) 
