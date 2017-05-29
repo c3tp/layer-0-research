@@ -1,5 +1,5 @@
 heat_template_version: 2016-04-08
-description: Updated template 3 with flavor change. Should not replace. 
+description: Updated template 4 with updated size of volume. 
 
 resources:
     new_floating_ip:
@@ -9,7 +9,7 @@ resources:
     bootable_volume:
         type: OS::Cinder::Volume
         properties:
-            size: 10
+            size: 20
             image: Ubuntu-16.04-Xenial-x64-2017-03
     nova_server:
         type: OS::Nova::Server

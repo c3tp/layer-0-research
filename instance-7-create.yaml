@@ -1,15 +1,19 @@
 heat_template_version: 2016-04-08
-description: Updated template 3 with flavor change. Should not replace. 
+description: Updated template 6 with attached volume
 
 resources:
     new_floating_ip:
         type: OS::Neutron::FloatingIP
         properties:
             floating_network: net04_ext
+    attached_volume:
+        type: OS::Cinder::Volume
+        properties: 
+            size: 10
     bootable_volume:
         type: OS::Cinder::Volume
         properties:
-            size: 10
+            size: 20
             image: Ubuntu-16.04-Xenial-x64-2017-03
     nova_server:
         type: OS::Nova::Server
@@ -22,6 +26,11 @@ resources:
                 - device_name: vda
                   volume_id: {get_resource: bootable_volume}
                   delete_on_termination: false
+    volume_attachment:
+        type: OS::Cinder::VolumeAttachment
+        properties:
+            volume_id: {get_resource: attached_volume}
+            instance_uuid: {get_resource: nova_server}
     ip_association:
         type: OS::Nova::FloatingIPAssociation
         properties:
