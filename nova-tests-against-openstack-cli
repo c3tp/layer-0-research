@@ -1,0 +1,1121 @@
+(openstack) server
+openstack: 'server' is not an openstack command. See 'openstack --help'.
+Did you mean one of these?
+  server add fixed ip
+  server add floating ip
+  server add port
+  server add security group
+  server add volume
+  server backup create
+  server create
+  server delete
+  server dump create
+  server event list
+  server event show
+  server group create
+  server group delete
+  server group list
+  server group show
+  server image create
+  server list
+  server lock
+  server migrate
+  server pause
+  server reboot
+  server rebuild
+  server remove fixed ip
+  server remove floating ip
+  server remove port
+  server remove security group
+  server remove volume
+  server rescue
+  server resize
+  server restore
+  server resume
+  server set
+  server shelve
+  server show
+  server ssh
+  server start
+  server stop
+  server suspend
+  server unlock
+  server unpause
+  server unrescue
+  server unset
+  server unshelve
+  service create
+  service delete
+  service list
+  service provider create
+  service provider delete
+  service provider list
+  service provider set
+  service provider show
+  service set
+  service show
+(openstack) server show nova-boot
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | Running                                                          |
+| OS-EXT-STS:task_state       | None                                                             |
+| OS-EXT-STS:vm_state         | active                                                           |
+| OS-SRV-USG:launched_at      | 2017-05-26T19:24:11.000000                                       |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   | c3tp-collab_network=192.168.113.37                               |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T19:23:41Z                                             |
+| flavor                      | p1-0.75gb (00e3a213-8be7-427b-b115-32927cfb58b3)                 |
+| hostId                      | 90ce38f3628d73fe887766629c7690ff85406a56604a3c92db2ad0f0         |
+| id                          | 1ee92def-dc48-48ce-ad9d-db71ac940ff2                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot                                                        |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | ACTIVE                                                           |
+| updated                     | 2017-05-26T19:24:11Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) server-show
+openstack: 'server-show' is not an openstack command. See 'openstack --help'.
+Did you mean one of these?
+  federation domain list
+  federation project list
+  federation protocol create
+  federation protocol delete
+  federation protocol list
+  federation protocol set
+  federation protocol show
+  server add fixed ip
+  server add floating ip
+  server add port
+  server add security group
+  server add volume
+  server backup create
+  server create
+  server delete
+  server dump create
+  server event list
+  server event show
+  server group create
+  server group delete
+  server group list
+  server group show
+  server image create
+  server list
+  server lock
+  server migrate
+  server pause
+  server reboot
+  server rebuild
+  server remove fixed ip
+  server remove floating ip
+  server remove port
+  server remove security group
+  server remove volume
+  server rescue
+  server resize
+  server restore
+  server resume
+  server set
+  server shelve
+  server show
+  server ssh
+  server start
+  server stop
+  server suspend
+  server unlock
+  server unpause
+  server unrescue
+  server unset
+  server unshelve
+(openstack) server list
++--------------------------------------+---------------------------+--------+----------------------------------------------------------------+------------+
+| ID                                   | Name                      | Status | Networks                                                       | Image Name |
++--------------------------------------+---------------------------+--------+----------------------------------------------------------------+------------+
+| 1ee92def-dc48-48ce-ad9d-db71ac940ff2 | nova-boot                 | ACTIVE | c3tp-collab_network=192.168.113.37                             | CentOS7    |
+| bacbf720-f546-4a9b-9d60-647efd13c9ff | kube-stack-node-chocolate | ACTIVE | kube-stack-fixed_network-3lozn6prxllk=10.0.0.11                | wrniheuq   |
+| cb59dbbf-a033-475b-8251-438f8c2b3a94 | kube-stack-node-wrniheuq  | ACTIVE | kube-stack-fixed_network-3lozn6prxllk=10.0.0.7, 206.167.180.81 | CentOS7    |
+| 94eadad2-c72d-447c-886f-ba11316d657a | kube-stack-master         | ACTIVE | kube-stack-fixed_network-3lozn6prxllk=10.0.0.5, 206.167.183.57 | CentOS7    |
+| 05a960f4-77bf-4405-a3ce-d41f25bf8d01 | jenkins                   | ACTIVE | c3tp-collab_network=192.168.113.33, 206.167.183.187            |            |
+| a88b11bd-9a72-4011-9a59-536a4b0bdc04 | discourse                 | ACTIVE | c3tp-collab_network=192.168.113.27, 206.167.181.152            |            |
+| 9ac8c795-a74a-4e3e-9dbf-8620e4c06d24 | router                    | ACTIVE | c3tp-collab_network=192.168.113.11, 206.167.181.159            |            |
+| def953a0-4cde-40c3-a256-e9d4114b669e | puppet                    | ACTIVE | c3tp-collab_network=192.168.113.10, 206.167.183.139            |            |
+| d355b870-93c2-4904-83a6-330deb6aaef1 | container-registry        | ACTIVE | c3tp-collab_network=192.168.113.7                              |            |
++--------------------------------------+---------------------------+--------+----------------------------------------------------------------+------------+
+(openstack) server show nova-boot
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | Running                                                          |
+| OS-EXT-STS:task_state       | None                                                             |
+| OS-EXT-STS:vm_state         | active                                                           |
+| OS-SRV-USG:launched_at      | 2017-05-26T19:24:11.000000                                       |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   | c3tp-collab_network=192.168.113.37                               |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T19:23:41Z                                             |
+| flavor                      | p1-0.75gb (00e3a213-8be7-427b-b115-32927cfb58b3)                 |
+| hostId                      | 90ce38f3628d73fe887766629c7690ff85406a56604a3c92db2ad0f0         |
+| id                          | 1ee92def-dc48-48ce-ad9d-db71ac940ff2                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot                                                        |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | ACTIVE                                                           |
+| updated                     | 2017-05-26T19:24:11Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) server delete nova-boot
+(openstack) server show nova-boot
+No server with a name or ID of 'nova-boot' exists.
+(openstack) server show nova-boot
+No server with a name or ID of 'nova-boot' exists.
+(openstack) server show nova-boot
+No server with a name or ID of 'nova-boot' exists.
+(openstack) ls
+openstack: 'ls' is not an openstack command. See 'openstack --help'.
+Did you mean one of these?
+  help
+  host list
+  host set
+  host show
+  ip availability list
+  ip availability show
+  ip fixed add
+  ip fixed remove
+  ip floating add
+  ip floating create
+  ip floating delete
+  ip floating list
+  ip floating pool list
+  ip floating remove
+  ip floating show
+  limits show
+  role add
+  role assignment list
+  role create
+  role delete
+  role list
+  role remove
+  role set
+  role show
+  user create
+  user delete
+  user list
+  user password set
+  user set
+  user show
+(openstack) create
+openstack: 'create' is not an openstack command. See 'openstack --help'.
+Did you mean one of these?
+  aggregate add host
+  aggregate create
+  aggregate delete
+  aggregate list
+  aggregate remove host
+  aggregate set
+  aggregate show
+  aggregate unset
+(openstack) nova
+openstack: 'nova' is not an openstack command. See 'openstack --help'.
+Did you mean one of these?
+  quota list
+  quota set
+  quota show
+(openstack) server
+openstack: 'server' is not an openstack command. See 'openstack --help'.
+Did you mean one of these?
+  server add fixed ip
+  server add floating ip
+  server add port
+  server add security group
+  server add volume
+  server backup create
+  server create
+  server delete
+  server dump create
+  server event list
+  server event show
+  server group create
+  server group delete
+  server group list
+  server group show
+  server image create
+  server list
+  server lock
+  server migrate
+  server pause
+  server reboot
+  server rebuild
+  server remove fixed ip
+  server remove floating ip
+  server remove port
+  server remove security group
+  server remove volume
+  server rescue
+  server resize
+  server restore
+  server resume
+  server set
+  server shelve
+  server show
+  server ssh
+  server start
+  server stop
+  server suspend
+  server unlock
+  server unpause
+  server unrescue
+  server unset
+  server unshelve
+  service create
+  service delete
+  service list
+  service provider create
+  service provider delete
+  service provider list
+  service provider set
+  service provider show
+  service set
+  service show
+(openstack) server create
+usage: server create [-h] [-f {json,shell,table,value,yaml}] [-c COLUMN]
+                     [--max-width <integer>] [--print-empty] [--noindent]
+                     [--prefix PREFIX] (--image <image> | --volume <volume>)
+                     --flavor <flavor>
+                     [--security-group <security-group-name>]
+                     [--key-name <key-name>] [--property <key=value>]
+                     [--file <dest-filename=source-filename>]
+                     [--user-data <user-data>]
+                     [--availability-zone <zone-name>]
+                     [--block-device-mapping <dev-name=mapping>]
+                     [--nic <net-id=net-uuid,v4-fixed-ip=ip-addr,v6-fixed-ip=ip-addr,port-id=port-uuid,auto,none>]
+                     [--network <network>] [--port <port>]
+                     [--hint <key=value>]
+                     [--config-drive <config-drive-volume>|True]
+                     [--min <count>] [--max <count>] [--wait]
+                     <server-name>
+server create: error: the following arguments are required: <server-name>, --flavor
+(openstack) server create --nic net-id=066bfc20-57ac-4204-b952-93f78b3d5af6
+usage: server create [-h] [-f {json,shell,table,value,yaml}] [-c COLUMN]
+                     [--max-width <integer>] [--print-empty] [--noindent]
+                     [--prefix PREFIX] (--image <image> | --volume <volume>)
+                     --flavor <flavor>
+                     [--security-group <security-group-name>]
+                     [--key-name <key-name>] [--property <key=value>]
+                     [--file <dest-filename=source-filename>]
+                     [--user-data <user-data>]
+                     [--availability-zone <zone-name>]
+                     [--block-device-mapping <dev-name=mapping>]
+                     [--nic <net-id=net-uuid,v4-fixed-ip=ip-addr,v6-fixed-ip=ip-addr,port-id=port-uuid,auto,none>]
+                     [--network <network>] [--port <port>]
+                     [--hint <key=value>]
+                     [--config-drive <config-drive-volume>|True]
+                     [--min <count>] [--max <count>] [--wait]
+                     <server-name>
+server create: error: the following arguments are required: <server-name>, --flavor
+(openstack) server create --nic net-id=066bfc20-57ac-4204-b952-93f78b3d5af6 --flavor p1-0.75gb --image CentOS7 nova-boot-2
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | NOSTATE                                                          |
+| OS-EXT-STS:task_state       | scheduling                                                       |
+| OS-EXT-STS:vm_state         | building                                                         |
+| OS-SRV-USG:launched_at      | None                                                             |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   |                                                                  |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T19:30:26Z                                             |
+| flavor                      | p1-0.75gb (00e3a213-8be7-427b-b115-32927cfb58b3)                 |
+| hostId                      |                                                                  |
+| id                          | f76edb4d-2d17-47cd-aa59-b2dd7f7d8765                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot-2                                                      |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | BUILD                                                            |
+| updated                     | 2017-05-26T19:30:27Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) server state nova-boot-2
+openstack: 'server state nova-boot-2' is not an openstack command. See 'openstack --help'.
+Did you mean one of these?
+  server add fixed ip
+  server add floating ip
+  server add port
+  server add security group
+  server add volume
+  server backup create
+  server create
+  server delete
+  server dump create
+  server event list
+  server event show
+  server group create
+  server group delete
+  server group list
+  server group show
+  server image create
+  server list
+  server lock
+  server migrate
+  server pause
+  server reboot
+  server rebuild
+  server remove fixed ip
+  server remove floating ip
+  server remove port
+  server remove security group
+  server remove volume
+  server rescue
+  server resize
+  server restore
+  server resume
+  server set
+  server shelve
+  server show
+  server ssh
+  server start
+  server stop
+  server suspend
+  server unlock
+  server unpause
+  server unrescue
+  server unset
+  server unshelve
+  service create
+  service delete
+  service list
+  service provider create
+  service provider delete
+  service provider list
+  service provider set
+  service provider show
+  service set
+  service show
+(openstack) server show  nova-boot-2
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | NOSTATE                                                          |
+| OS-EXT-STS:task_state       | spawning                                                         |
+| OS-EXT-STS:vm_state         | building                                                         |
+| OS-SRV-USG:launched_at      | None                                                             |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   |                                                                  |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T19:30:26Z                                             |
+| flavor                      | p1-0.75gb (00e3a213-8be7-427b-b115-32927cfb58b3)                 |
+| hostId                      | 83f13d80b7c841f4291580fc43bc3d92cc857f1515a439017bfacba3         |
+| id                          | f76edb4d-2d17-47cd-aa59-b2dd7f7d8765                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot-2                                                      |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | BUILD                                                            |
+| updated                     | 2017-05-26T19:30:27Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) server show  nova-boot-2
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | NOSTATE                                                          |
+| OS-EXT-STS:task_state       | spawning                                                         |
+| OS-EXT-STS:vm_state         | building                                                         |
+| OS-SRV-USG:launched_at      | None                                                             |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   |                                                                  |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T19:30:26Z                                             |
+| flavor                      | p1-0.75gb (00e3a213-8be7-427b-b115-32927cfb58b3)                 |
+| hostId                      | 83f13d80b7c841f4291580fc43bc3d92cc857f1515a439017bfacba3         |
+| id                          | f76edb4d-2d17-47cd-aa59-b2dd7f7d8765                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot-2                                                      |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | BUILD                                                            |
+| updated                     | 2017-05-26T19:30:27Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) server show  nova-boot-2
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | NOSTATE                                                          |
+| OS-EXT-STS:task_state       | spawning                                                         |
+| OS-EXT-STS:vm_state         | building                                                         |
+| OS-SRV-USG:launched_at      | None                                                             |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   |                                                                  |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T19:30:26Z                                             |
+| flavor                      | p1-0.75gb (00e3a213-8be7-427b-b115-32927cfb58b3)                 |
+| hostId                      | 83f13d80b7c841f4291580fc43bc3d92cc857f1515a439017bfacba3         |
+| id                          | f76edb4d-2d17-47cd-aa59-b2dd7f7d8765                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot-2                                                      |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | BUILD                                                            |
+| updated                     | 2017-05-26T19:30:27Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) server show  nova-boot-2
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | Running                                                          |
+| OS-EXT-STS:task_state       | None                                                             |
+| OS-EXT-STS:vm_state         | active                                                           |
+| OS-SRV-USG:launched_at      | 2017-05-26T19:30:44.000000                                       |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   | c3tp-collab_network=192.168.113.38                               |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T19:30:26Z                                             |
+| flavor                      | p1-0.75gb (00e3a213-8be7-427b-b115-32927cfb58b3)                 |
+| hostId                      | 83f13d80b7c841f4291580fc43bc3d92cc857f1515a439017bfacba3         |
+| id                          | f76edb4d-2d17-47cd-aa59-b2dd7f7d8765                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot-2                                                      |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | ACTIVE                                                           |
+| updated                     | 2017-05-26T19:30:46Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) server show  nova-boot-2
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | Running                                                          |
+| OS-EXT-STS:task_state       | None                                                             |
+| OS-EXT-STS:vm_state         | active                                                           |
+| OS-SRV-USG:launched_at      | 2017-05-26T19:30:44.000000                                       |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   | c3tp-collab_network=192.168.113.38                               |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T19:30:26Z                                             |
+| flavor                      | p1-0.75gb (00e3a213-8be7-427b-b115-32927cfb58b3)                 |
+| hostId                      | 83f13d80b7c841f4291580fc43bc3d92cc857f1515a439017bfacba3         |
+| id                          | f76edb4d-2d17-47cd-aa59-b2dd7f7d8765                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot-2                                                      |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | ACTIVE                                                           |
+| updated                     | 2017-05-26T19:30:46Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) server
+openstack: 'server' is not an openstack command. See 'openstack --help'.
+Did you mean one of these?
+  server add fixed ip
+  server add floating ip
+  server add port
+  server add security group
+  server add volume
+  server backup create
+  server create
+  server delete
+  server dump create
+  server event list
+  server event show
+  server group create
+  server group delete
+  server group list
+  server group show
+  server image create
+  server list
+  server lock
+  server migrate
+  server pause
+  server reboot
+  server rebuild
+  server remove fixed ip
+  server remove floating ip
+  server remove port
+  server remove security group
+  server remove volume
+  server rescue
+  server resize
+  server restore
+  server resume
+  server set
+  server shelve
+  server show
+  server ssh
+  server start
+  server stop
+  server suspend
+  server unlock
+  server unpause
+  server unrescue
+  server unset
+  server unshelve
+  service create
+  service delete
+  service list
+  service provider create
+  service provider delete
+  service provider list
+  service provider set
+  service provider show
+  service set
+  service show
+(openstack) server resize
+usage: server resize [-h] [--flavor <flavor> | --confirm | --revert] [--wait]
+                     <server>
+server resize: error: the following arguments are required: <server>
+(openstack) server resize nova-boot-2
+(openstack) server resize --flavor p4-3gb nova-boot-2
+(openstack) server show nova-boot-2
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | Running                                                          |
+| OS-EXT-STS:task_state       | resize_finish                                                    |
+| OS-EXT-STS:vm_state         | active                                                           |
+| OS-SRV-USG:launched_at      | 2017-05-26T19:30:44.000000                                       |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   | c3tp-collab_network=192.168.113.38                               |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T19:30:26Z                                             |
+| flavor                      | p4-3gb (75cd0f21-56bf-4f5d-a942-06aab22c4eaf)                    |
+| hostId                      | b3dafbea2731184fd2211209bfa455e4d41aad437a00882885742183         |
+| id                          | f76edb4d-2d17-47cd-aa59-b2dd7f7d8765                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot-2                                                      |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | RESIZE                                                           |
+| updated                     | 2017-05-26T19:32:26Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) server show nova-boot-2
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | Running                                                          |
+| OS-EXT-STS:task_state       | resize_finish                                                    |
+| OS-EXT-STS:vm_state         | active                                                           |
+| OS-SRV-USG:launched_at      | 2017-05-26T19:30:44.000000                                       |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   | c3tp-collab_network=192.168.113.38                               |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T19:30:26Z                                             |
+| flavor                      | p4-3gb (75cd0f21-56bf-4f5d-a942-06aab22c4eaf)                    |
+| hostId                      | b3dafbea2731184fd2211209bfa455e4d41aad437a00882885742183         |
+| id                          | f76edb4d-2d17-47cd-aa59-b2dd7f7d8765                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot-2                                                      |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | RESIZE                                                           |
+| updated                     | 2017-05-26T19:32:26Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) server show nova-boot-2
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | Running                                                          |
+| OS-EXT-STS:task_state       | None                                                             |
+| OS-EXT-STS:vm_state         | resized                                                          |
+| OS-SRV-USG:launched_at      | 2017-05-26T19:32:42.000000                                       |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   | c3tp-collab_network=192.168.113.38                               |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T19:30:26Z                                             |
+| flavor                      | p4-3gb (75cd0f21-56bf-4f5d-a942-06aab22c4eaf)                    |
+| hostId                      | b3dafbea2731184fd2211209bfa455e4d41aad437a00882885742183         |
+| id                          | f76edb4d-2d17-47cd-aa59-b2dd7f7d8765                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot-2                                                      |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | VERIFY_RESIZE                                                    |
+| updated                     | 2017-05-26T19:32:42Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) server resize --confirm f76edb4d-2d17-47cd-aa59-b2dd7f7d8765
+(openstack) server show nova-boot-2
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | Running                                                          |
+| OS-EXT-STS:task_state       | None                                                             |
+| OS-EXT-STS:vm_state         | active                                                           |
+| OS-SRV-USG:launched_at      | 2017-05-26T19:32:42.000000                                       |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   | c3tp-collab_network=192.168.113.38                               |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T19:30:26Z                                             |
+| flavor                      | p4-3gb (75cd0f21-56bf-4f5d-a942-06aab22c4eaf)                    |
+| hostId                      | b3dafbea2731184fd2211209bfa455e4d41aad437a00882885742183         |
+| id                          | f76edb4d-2d17-47cd-aa59-b2dd7f7d8765                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot-2                                                      |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | ACTIVE                                                           |
+| updated                     | 2017-05-26T19:36:23Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) server resize --flavor p8-15gb nova-boot-2
+(openstack) server show nova-boot-2
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | Running                                                          |
+| OS-EXT-STS:task_state       | resize_migrating                                                 |
+| OS-EXT-STS:vm_state         | active                                                           |
+| OS-SRV-USG:launched_at      | 2017-05-26T19:32:42.000000                                       |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   | c3tp-collab_network=192.168.113.38                               |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T19:30:26Z                                             |
+| flavor                      | p4-3gb (75cd0f21-56bf-4f5d-a942-06aab22c4eaf)                    |
+| hostId                      | b3dafbea2731184fd2211209bfa455e4d41aad437a00882885742183         |
+| id                          | f76edb4d-2d17-47cd-aa59-b2dd7f7d8765                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot-2                                                      |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | RESIZE                                                           |
+| updated                     | 2017-05-26T19:37:22Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) server resize --confirm f76edb4d-2d17-47cd-aa59-b2dd7f7d8765
+(openstack) server show nova-boot-2
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | Running                                                          |
+| OS-EXT-STS:task_state       | None                                                             |
+| OS-EXT-STS:vm_state         | active                                                           |
+| OS-SRV-USG:launched_at      | 2017-05-26T19:37:48.000000                                       |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   | c3tp-collab_network=192.168.113.38                               |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T19:30:26Z                                             |
+| flavor                      | p8-15gb (c64e6ddf-030e-4f02-80a2-c2397fa1a9bb)                   |
+| hostId                      | 70653a8684f642b543cc90bac5f399b88f733eb85f66730f74db6fc7         |
+| id                          | f76edb4d-2d17-47cd-aa59-b2dd7f7d8765                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot-2                                                      |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | ACTIVE                                                           |
+| updated                     | 2017-05-26T19:38:05Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) server create --nic net-id=066bfc20-57ac-4204-b952-93f78b3d5af6 --flavor p1-0.75gb --image CentOS7 nova-boot-3
+Quota exceeded for cores, ram: Requested 1, 768, but already used 40, 76800 of 40, 76800 cores, ram (HTTP 403) (Request-ID: req-89b4cef6-0f7d-4e43-a7c8-9fd382483acd)
+(openstack) server delete nova-boot-2
+(openstack) server show nova-boot-2
+No server with a name or ID of 'nova-boot-2' exists.
+(openstack) server create --nic net-id=066bfc20-57ac-4204-b952-93f78b3d5af6 --flavor p8-30gb --image CentOS7 nova-boot-3
+Quota exceeded for ram: Requested 30720, but already used 61440 of 76800 ram (HTTP 403) (Request-ID: req-092ade43-ef94-4931-b0b6-08e0e29cb56b)
+(openstack) server show nova-boot-2
+No server with a name or ID of 'nova-boot-2' exists.
+(openstack) server create --nic net-id=066bfc20-57ac-4204-b952-93f78b3d5af6 --flavor p4-3gb --image CentOS7 nova-boot-3
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | NOSTATE                                                          |
+| OS-EXT-STS:task_state       | scheduling                                                       |
+| OS-EXT-STS:vm_state         | building                                                         |
+| OS-SRV-USG:launched_at      | None                                                             |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   |                                                                  |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T20:09:25Z                                             |
+| flavor                      | p4-3gb (75cd0f21-56bf-4f5d-a942-06aab22c4eaf)                    |
+| hostId                      |                                                                  |
+| id                          | b47fd2eb-edf9-422b-9631-9bded769ea60                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot-3                                                      |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | BUILD                                                            |
+| updated                     | 2017-05-26T20:09:23Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) server show nova-boot-3
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | NOSTATE                                                          |
+| OS-EXT-STS:task_state       | spawning                                                         |
+| OS-EXT-STS:vm_state         | building                                                         |
+| OS-SRV-USG:launched_at      | None                                                             |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   |                                                                  |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T20:09:25Z                                             |
+| flavor                      | p4-3gb (75cd0f21-56bf-4f5d-a942-06aab22c4eaf)                    |
+| hostId                      | 7593b432725123f44611db81e76193c5720d10c6ca232438d21dfdb8         |
+| id                          | b47fd2eb-edf9-422b-9631-9bded769ea60                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot-3                                                      |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | BUILD                                                            |
+| updated                     | 2017-05-26T20:09:23Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) server show nova-boot-3
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | NOSTATE                                                          |
+| OS-EXT-STS:task_state       | spawning                                                         |
+| OS-EXT-STS:vm_state         | building                                                         |
+| OS-SRV-USG:launched_at      | None                                                             |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   |                                                                  |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T20:09:25Z                                             |
+| flavor                      | p4-3gb (75cd0f21-56bf-4f5d-a942-06aab22c4eaf)                    |
+| hostId                      | 7593b432725123f44611db81e76193c5720d10c6ca232438d21dfdb8         |
+| id                          | b47fd2eb-edf9-422b-9631-9bded769ea60                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot-3                                                      |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | BUILD                                                            |
+| updated                     | 2017-05-26T20:09:23Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) server show nova-boot-3
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | NOSTATE                                                          |
+| OS-EXT-STS:task_state       | spawning                                                         |
+| OS-EXT-STS:vm_state         | building                                                         |
+| OS-SRV-USG:launched_at      | None                                                             |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   |                                                                  |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T20:09:25Z                                             |
+| flavor                      | p4-3gb (75cd0f21-56bf-4f5d-a942-06aab22c4eaf)                    |
+| hostId                      | 7593b432725123f44611db81e76193c5720d10c6ca232438d21dfdb8         |
+| id                          | b47fd2eb-edf9-422b-9631-9bded769ea60                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot-3                                                      |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | BUILD                                                            |
+| updated                     | 2017-05-26T20:09:23Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) server show nova-boot-3
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | NOSTATE                                                          |
+| OS-EXT-STS:task_state       | spawning                                                         |
+| OS-EXT-STS:vm_state         | building                                                         |
+| OS-SRV-USG:launched_at      | None                                                             |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   |                                                                  |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T20:09:25Z                                             |
+| flavor                      | p4-3gb (75cd0f21-56bf-4f5d-a942-06aab22c4eaf)                    |
+| hostId                      | 7593b432725123f44611db81e76193c5720d10c6ca232438d21dfdb8         |
+| id                          | b47fd2eb-edf9-422b-9631-9bded769ea60                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot-3                                                      |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | BUILD                                                            |
+| updated                     | 2017-05-26T20:09:23Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) server show nova-boot-3
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | NOSTATE                                                          |
+| OS-EXT-STS:task_state       | spawning                                                         |
+| OS-EXT-STS:vm_state         | building                                                         |
+| OS-SRV-USG:launched_at      | None                                                             |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   |                                                                  |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T20:09:25Z                                             |
+| flavor                      | p4-3gb (75cd0f21-56bf-4f5d-a942-06aab22c4eaf)                    |
+| hostId                      | 7593b432725123f44611db81e76193c5720d10c6ca232438d21dfdb8         |
+| id                          | b47fd2eb-edf9-422b-9631-9bded769ea60                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot-3                                                      |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | BUILD                                                            |
+| updated                     | 2017-05-26T20:09:23Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) server show nova-boot-3
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | NOSTATE                                                          |
+| OS-EXT-STS:task_state       | spawning                                                         |
+| OS-EXT-STS:vm_state         | building                                                         |
+| OS-SRV-USG:launched_at      | None                                                             |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   |                                                                  |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T20:09:25Z                                             |
+| flavor                      | p4-3gb (75cd0f21-56bf-4f5d-a942-06aab22c4eaf)                    |
+| hostId                      | 7593b432725123f44611db81e76193c5720d10c6ca232438d21dfdb8         |
+| id                          | b47fd2eb-edf9-422b-9631-9bded769ea60                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot-3                                                      |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | BUILD                                                            |
+| updated                     | 2017-05-26T20:09:23Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) server show nova-boot-3
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | Running                                                          |
+| OS-EXT-STS:task_state       | None                                                             |
+| OS-EXT-STS:vm_state         | active                                                           |
+| OS-SRV-USG:launched_at      | 2017-05-26T20:09:40.000000                                       |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   | c3tp-collab_network=192.168.113.39                               |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T20:09:25Z                                             |
+| flavor                      | p4-3gb (75cd0f21-56bf-4f5d-a942-06aab22c4eaf)                    |
+| hostId                      | 7593b432725123f44611db81e76193c5720d10c6ca232438d21dfdb8         |
+| id                          | b47fd2eb-edf9-422b-9631-9bded769ea60                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot-3                                                      |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | ACTIVE                                                           |
+| updated                     | 2017-05-26T20:09:39Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) server show nova-boot-3
+
++-----------------------------+------------------------------------------------------------------+
+| Field                       | Value                                                            |
++-----------------------------+------------------------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                                           |
+| OS-EXT-AZ:availability_zone | nova                                                             |
+| OS-EXT-STS:power_state      | Running                                                          |
+| OS-EXT-STS:task_state       | None                                                             |
+| OS-EXT-STS:vm_state         | active                                                           |
+| OS-SRV-USG:launched_at      | 2017-05-26T20:09:40.000000                                       |
+| OS-SRV-USG:terminated_at    | None                                                             |
+| accessIPv4                  |                                                                  |
+| accessIPv6                  |                                                                  |
+| addresses                   | c3tp-collab_network=192.168.113.39                               |
+| config_drive                |                                                                  |
+| created                     | 2017-05-26T20:09:25Z                                             |
+| flavor                      | p4-3gb (75cd0f21-56bf-4f5d-a942-06aab22c4eaf)                    |
+| hostId                      | 7593b432725123f44611db81e76193c5720d10c6ca232438d21dfdb8         |
+| id                          | b47fd2eb-edf9-422b-9631-9bded769ea60                             |
+| image                       | CentOS7 (ee4b6502-f3cf-40d0-9307-810e92030556)                   |
+| key_name                    | None                                                             |
+| name                        | nova-boot-3                                                      |
+| progress                    | 0                                                                |
+| project_id                  | 3bbebcd6ffec48b19f1d8dbdf31c237d                                 |
+| properties                  |                                                                  |
+| security_groups             | name='default'                                                   |
+| status                      | ACTIVE                                                           |
+| updated                     | 2017-05-26T20:09:39Z                                             |
+| user_id                     | 46b6dfa8902ccf841b965caed94999299020eeb4326784e3403e036be8ae813d |
+| volumes_attached            |                                                                  |
++-----------------------------+------------------------------------------------------------------+
+(openstack) 
+(openstack) server resize --flavor p8-30gb nova-boot-3
+Quota exceeded for ram: Requested 27648, but already used 64512 of 76800 ram (HTTP 403) (Request-ID: req-bbb10f9c-64a6-49ef-a956-cd71c703c7f9)
+(openstack) server delete nova-boot-3
+(openstack) exit
